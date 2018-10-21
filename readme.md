@@ -16,4 +16,4 @@ In the project directory, run `hugo server`. Then go to [http://localhost:1313/]
 
 ### Building
 
-To build a production version of the website, run `hugo` and it will create a production build in the `public` folder, which you can set as a git submodule and deploy on a seperate repository.
+To build a production version of the website, run `hugo` and it will create a production build in the `public` folder.
