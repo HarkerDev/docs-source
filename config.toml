@@ -1,0 +1,13 @@
+baseURL = "https://harkerdev.github.io/docs/"
+languageCode = "en-us"
+title = "Harker Development Docs"
+
+theme = "hugo-theme-learn"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+themeVariant = "green"
+author = "Harker Development"
+description = "Harker Development documentation."
