@@ -3,28 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/contribution/</loc>
+    <loc>https://harkerdev.github.io/docs/contribution/</loc>
     <lastmod>2018-10-20T22:20:58-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/contribution/github/</loc>
-    <lastmod>2018-10-20T22:23:34-05:00</lastmod>
+    <loc>https://harkerdev.github.io/docs/front-end/</loc>
+    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://harkerdev.github.io/docs/back-end/</loc>
+    <lastmod>2018-10-21T01:10:35-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/contribution/github/</loc>
+    <lastmod>2018-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/back-end/mongodb-access-with-compass/</loc>
+    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/front-end/add-page/</loc>
+    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/contribution/creating-mainting-project/</loc>
+    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/back-end/test-files-database/</loc>
+    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/front-end/reference-partial-page/</loc>
+    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/back-end/setting-up-a-server/</loc>
+    <lastmod>2018-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/front-end/frontend-dev/</loc>
+    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/back-end/mongodb-backup/</loc>
+    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/</loc>
+    <lastmod>2018-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harkerdev.github.io/docs/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2018-10-20T22:23:34-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://harkerdev.github.io/docs/tags/</loc>
     <priority>0</priority>
   </url>
   

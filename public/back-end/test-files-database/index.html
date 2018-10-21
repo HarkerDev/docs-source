@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.48" />
+    <meta name="description" content="Harker Development documentation.">
+<meta name="author" content="Harker Development">
+
+    <link rel="shortcut icon" href="/docs/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/docs/images/favicon.png" type="image/x-icon" />
+    <title>Populate Database w/ Test Files :: Harker Development Docs</title>
+
+    
+    <link href="/docs/css/nucleus.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/fontawesome-all.min.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/hybrid.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/featherlight.min.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/perfect-scrollbar.min.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/auto-complete.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/theme.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/hugo-theme.css?1540102564" rel="stylesheet">
+    
+      <link href="/docs/css/theme-green.css?1540102564" rel="stylesheet">
+    
+
+    <script src="/docs/js/jquery-2.x.min.js?1540102564"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/docs/back-end/test-files-database/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/static/img/logo.png"/>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/docs/js/lunr.min.js?1540102564"></script>
+<script type="text/javascript" src="/docs/js/auto-complete.js?1540102564"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/harkerdev.github.io\/docs\/";
+    
+</script>
+<script type="text/javascript" src="/docs/js/search.js?1540102564"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docs/contribution/" title="Contribution" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docs/contribution/">
+          <b>I. </b>Contribution
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/contribution/github/" title="GitHub Contributions" class="dd-item ">
+        <a href="/docs/contribution/github/">
+        GitHub Contributions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/contribution/creating-mainting-project/" title="Developing a Project" class="dd-item ">
+        <a href="/docs/contribution/creating-mainting-project/">
+        Developing a Project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docs/front-end/" title="Front End" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docs/front-end/">
+          <b>II. </b>Front End
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/front-end/add-page/" title="Adding a New Page to a Project" class="dd-item ">
+        <a href="/docs/front-end/add-page/">
+        Adding a New Page to a Project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/front-end/reference-partial-page/" title="Referencing a Partial Page" class="dd-item ">
+        <a href="/docs/front-end/reference-partial-page/">
+        Referencing a Partial Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/front-end/frontend-dev/" title="Front End Dev Practices" class="dd-item ">
+        <a href="/docs/front-end/frontend-dev/">
+        Front End Dev Practices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docs/back-end/" title="Back End" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/docs/back-end/">
+          <b>III. </b>Back End
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/back-end/mongodb-access-with-compass/" title="Access MongoDB with MongoDB Compass" class="dd-item ">
+        <a href="/docs/back-end/mongodb-access-with-compass/">
+        Access MongoDB with MongoDB Compass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/back-end/test-files-database/" title="Populate Database w/ Test Files" class="dd-item active">
+        <a href="/docs/back-end/test-files-database/">
+        Populate Database w/ Test Files
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/back-end/setting-up-a-server/" title="Setting Up A Server" class="dd-item ">
+        <a href="/docs/back-end/setting-up-a-server/">
+        Setting Up A Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/back-end/mongodb-backup/" title="MongoDB Backup" class="dd-item ">
+        <a href="/docs/back-end/mongodb-backup/">
+        MongoDB Backup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/docs/'></a> > <a href='/docs/back-end/'>Back End</a> > Populate Database w/ Test Files
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#creating-db-test-files">Creating DB Test files</a>
+<ul>
+<li>
+<ul>
+<li><a href="#a-note-on-implementation">A note on implementation</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#creating-scripts">Creating scripts</a>
+<ul>
+<li><a href="#unpopulate-script">Unpopulate script</a></li>
+<li><a href="#populate-script">Populate script</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Populate Database w/ Test Files</h1>
+          
+
+        
+
+
+
+
+<p>Testing often requires a populated database to work with. This tutorial explains how to write a write scripts which populate the database with test documents specified in files you will create.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Make sure that MongoDB is set up and <code>mongod</code> is running. Review the structure of your collections. For this tutorial, we will be using users as our example, with the following schema:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mongoose</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;../db&#39;</span>);
+
+<span style="color:#75715e">// Format of the mongoDB collection
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userSchema</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">mongoose</span>.<span style="color:#a6e22e">Schema</span>({
+  <span style="color:#a6e22e">fullName</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> String,
+    <span style="color:#a6e22e">required</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+  },
+  <span style="color:#a6e22e">username</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> String,
+    <span style="color:#a6e22e">required</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">index</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">unique</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    },
+  },
+});
+
+<span style="color:#75715e">// Creating the mongoose model
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">User</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">mongoose</span>.<span style="color:#a6e22e">model</span>(<span style="color:#e6db74">&#39;User&#39;</span>, <span style="color:#a6e22e">userSchema</span>);
+
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">User</span>;
+</code></pre></div>
+
+<h2 id="creating-db-test-files">Creating DB Test files</h2>
+
+<p>In your repository folder, create a new folder titled <code>DatabaseTestFiles</code>. In this folder, create a new file called <code>UserTest.json</code>. Line by line, create a new instance of a user. Here is an example:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{<span style="color:#f92672">&#34;fullName&#34;</span>:<span style="color:#e6db74">&#34;John Doe&#34;</span>,<span style="color:#f92672">&#34;username&#34;</span>:<span style="color:#e6db74">&#34;19johnd&#34;</span>}
+{<span style="color:#f92672">&#34;fullName&#34;</span>:<span style="color:#e6db74">&#34;Mary Molly&#34;</span>,<span style="color:#f92672">&#34;username&#34;</span>:<span style="color:#e6db74">&#34;17marym&#34;</span>}</code></pre></div>
+
+<p>Note the lack of commas between objects.</p>
+
+<h4 id="a-note-on-implementation">A note on implementation</h4>
+
+<p>We are only using a model with two String fields. More models and fields could be added in the same fashion. If a reference field is added, there are two possibilities that could be implemented. The first would be to generate the ids in the database test files, and then reference those ids them in the other document. The other would be to generate documents for both collections separately, then randomly pair them together (depending on the direction of the reference).</p>
+
+<h2 id="creating-scripts">Creating scripts</h2>
+
+<p>If it does not already exist, add a folder to your repository folder titled <code>scripts</code>.</p>
+
+<h3 id="unpopulate-script">Unpopulate script</h3>
+
+<p>In your <code>scripts</code> folder, add a file titled <code>unpopulate.js</code>.
+Add the following <code>require</code> block to the beginning of your code:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">readline</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;readline&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mongoose</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;../db&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">User</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;../models/user&#39;</span>);
+</code></pre></div>
+
+<p>If you were to add another model to the populate script, you would add its <code>require</code> reference here.
+Then, add the <code>parseUsers</code> function.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseUsers</span>() {
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) =&gt; {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mongoTransactions</span> <span style="color:#f92672">=</span> [];
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userRl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">readline</span>.<span style="color:#a6e22e">createInterface</span>({
+      <span style="color:#a6e22e">input</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">createReadStream</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">__dirname</span><span style="color:#e6db74">}</span><span style="color:#e6db74">/../DatabaseTestFiles/UserTest.json`</span>),
+    });
+    <span style="color:#a6e22e">userRl</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;line&#39;</span>, (<span style="color:#a6e22e">data</span>) =&gt; {
+      <span style="color:#a6e22e">mongoTransactions</span>.<span style="color:#a6e22e">push</span>(
+        <span style="color:#a6e22e">User</span>.<span style="color:#a6e22e">findOne</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">data</span>))
+          .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">user</span>) =&gt; {
+            <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">user</span>) <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">`User ith username </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">data</span>).<span style="color:#a6e22e">username</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> does not exist`</span>);
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">user</span>;
+          })
+          .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">user</span> =&gt; <span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">remove</span>())
+          .<span style="color:#a6e22e">then</span>(() =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Removed user with username </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">data</span>).<span style="color:#a6e22e">username</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>))
+          .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">err</span>) =&gt; {
+            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Error removing user from database: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">err</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+          })
+      );
+    });
+    <span style="color:#a6e22e">userRl</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;close&#39;</span>, () =&gt; {
+      Promise.<span style="color:#a6e22e">all</span>(<span style="color:#a6e22e">mongoTransactions</span>)
+        .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">resolve</span>)
+        .<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">reject</span>);
+    });
+  });
+}
+</code></pre></div>
+
+<p>If you wanted to reference another model in User, for example &lsquo;Groceries&rsquo;, you would make a new, similar function but called <code>deleteGroceriesOfUsers</code> and which would take the parameter <code>user</code> and delete all of the groceries that that user referenced. Then, directly after this code block:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">user</span>) =&gt; {
+  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">user</span>) <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">`User ith username </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">data</span>).<span style="color:#a6e22e">username</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> does not exist`</span>);
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">user</span>;
+})
+</code></pre></div>
+
+<p>Add another <code>.then()</code> statement as so:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">.<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">user</span> =&gt; { <span style="color:#a6e22e">deleteGroceriesOfUser</span>(<span style="color:#a6e22e">user</span>) })
+</code></pre></div>
+
+<p>Finally, at the end of the script, add this execution statement:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">parent</span>) {
+  <span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">parseUsers</span>();
+} <span style="color:#66d9ef">else</span> {
+  <span style="color:#a6e22e">parseUsers</span>().<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">mongoose</span>.<span style="color:#a6e22e">disconnect</span>);
+}
+</code></pre></div>
+
+<p>This checks to see if this code is being run by another script, which will be important for the <code>populate.js</code> script.</p>
+
+<h3 id="populate-script">Populate script</h3>
+
+<p>In your <code>scripts</code> folder, add a file titled <code>populate.js</code>. Add the following <code>require</code> block to the beginning of your code:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">readline</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;readline&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mongoose</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;../db&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">User</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;../models/user&#39;</span>);
+</code></pre></div>
+
+<p>If you were to add another model to the populate script, you would add its <code>require</code> reference here. Then, add the <code>parseUsers</code> function:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">parseUsers</span>() {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mongoTransactions</span> <span style="color:#f92672">=</span> [];
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">users</span> <span style="color:#f92672">=</span> [];
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userRl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">readline</span>.<span style="color:#a6e22e">createInterface</span>({
+    <span style="color:#a6e22e">input</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">createReadStream</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">__dirname</span><span style="color:#e6db74">}</span><span style="color:#e6db74">/../DatabaseTestFiles/UserTest.json`</span>),
+  });
+  <span style="color:#a6e22e">userRl</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;line&#39;</span>, (<span style="color:#a6e22e">data</span>) =&gt; {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">user</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">User</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">data</span>));
+    <span style="color:#a6e22e">mongoTransactions</span>.<span style="color:#a6e22e">push</span>(
+      <span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">save</span>().<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">doc</span>) =&gt; {
+        <span style="color:#a6e22e">users</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">doc</span>);
+      }).<span style="color:#a6e22e">then</span>(() =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Created user with username </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">data</span>).<span style="color:#a6e22e">username</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>))
+      .<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">err</span>) =&gt; {
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Error saving user to database: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">err</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+      })
+    );
+  });
+}
+</code></pre></div>
+
+<p>This function goes line-by-line through the database test file and creates a new document for each.</p>
+
+<p>If you wanted to reference another model in User, for example &lsquo;Groceries&rsquo;, you would make a new, similar function but called <code>parseGroceries</code> and which would take the parameter <code>users</code>. Then, append the following code inside of the <code>parseUsers</code> function:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">userRl</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;close&#39;</span>, () =&gt; {
+  Promise.<span style="color:#a6e22e">all</span>(<span style="color:#a6e22e">mongoTransactions</span>).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">users</span> =&gt; {
+    <span style="color:#a6e22e">parseGroceries</span>(<span style="color:#a6e22e">users</span>);
+  });
+});
+</code></pre></div>
+
+<p>Finally, at the end of your code, add this statement:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./unpopulate&#39;</span>).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">parseUsers</span>);
+</code></pre></div>
+
+<p>This makes sure that the database is depopulated before repopulating it.</p>
+
+<p><br><br></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/docs/back-end/mongodb-access-with-compass/" title="Access MongoDB with MongoDB Compass"> <i class="fas fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/docs/back-end/setting-up-a-server/" title="Setting Up A Server" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/docs/js/clipboard.min.js?1540102564"></script>
+    <script src="/docs/js/perfect-scrollbar.min.js?1540102564"></script>
+    <script src="/docs/js/perfect-scrollbar.jquery.min.js?1540102564"></script>
+    <script src="/docs/js/jquery.sticky.js?1540102564"></script>
+    <script src="/docs/js/featherlight.min.js?1540102564"></script>
+    <script src="/docs/js/html5shiv-printshiv.min.js?1540102564"></script>
+    <script src="/docs/js/highlight.pack.js?1540102564"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/docs/js/modernizr.custom.71422.js?1540102564"></script>
+    <script src="/docs/js/learn.js?1540102564"></script>
+    <script src="/docs/js/hugo-learn.js?1540102564"></script>
+
+    <link href="/docs/mermaid/mermaid.css?1540102564" type="text/css" rel="stylesheet" />
+    <script src="/docs/mermaid/mermaid.js?1540102564"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

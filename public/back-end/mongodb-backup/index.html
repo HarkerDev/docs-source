@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.48" />
+    <meta name="description" content="Harker Development documentation.">
+<meta name="author" content="Harker Development">
+
+    <link rel="shortcut icon" href="/docs/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/docs/images/favicon.png" type="image/x-icon" />
+    <title>MongoDB Backup :: Harker Development Docs</title>
+
+    
+    <link href="/docs/css/nucleus.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/fontawesome-all.min.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/hybrid.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/featherlight.min.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/perfect-scrollbar.min.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/auto-complete.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/theme.css?1540102564" rel="stylesheet">
+    <link href="/docs/css/hugo-theme.css?1540102564" rel="stylesheet">
+    
+      <link href="/docs/css/theme-green.css?1540102564" rel="stylesheet">
+    
+
+    <script src="/docs/js/jquery-2.x.min.js?1540102564"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/docs/back-end/mongodb-backup/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/static/img/logo.png"/>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/docs/js/lunr.min.js?1540102564"></script>
+<script type="text/javascript" src="/docs/js/auto-complete.js?1540102564"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/harkerdev.github.io\/docs\/";
+    
+</script>
+<script type="text/javascript" src="/docs/js/search.js?1540102564"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docs/contribution/" title="Contribution" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docs/contribution/">
+          <b>I. </b>Contribution
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/contribution/github/" title="GitHub Contributions" class="dd-item ">
+        <a href="/docs/contribution/github/">
+        GitHub Contributions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/contribution/creating-mainting-project/" title="Developing a Project" class="dd-item ">
+        <a href="/docs/contribution/creating-mainting-project/">
+        Developing a Project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docs/front-end/" title="Front End" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/docs/front-end/">
+          <b>II. </b>Front End
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/front-end/add-page/" title="Adding a New Page to a Project" class="dd-item ">
+        <a href="/docs/front-end/add-page/">
+        Adding a New Page to a Project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/front-end/reference-partial-page/" title="Referencing a Partial Page" class="dd-item ">
+        <a href="/docs/front-end/reference-partial-page/">
+        Referencing a Partial Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/front-end/frontend-dev/" title="Front End Dev Practices" class="dd-item ">
+        <a href="/docs/front-end/frontend-dev/">
+        Front End Dev Practices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/docs/back-end/" title="Back End" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/docs/back-end/">
+          <b>III. </b>Back End
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/back-end/mongodb-access-with-compass/" title="Access MongoDB with MongoDB Compass" class="dd-item ">
+        <a href="/docs/back-end/mongodb-access-with-compass/">
+        Access MongoDB with MongoDB Compass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/back-end/test-files-database/" title="Populate Database w/ Test Files" class="dd-item ">
+        <a href="/docs/back-end/test-files-database/">
+        Populate Database w/ Test Files
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/back-end/setting-up-a-server/" title="Setting Up A Server" class="dd-item ">
+        <a href="/docs/back-end/setting-up-a-server/">
+        Setting Up A Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/docs/back-end/mongodb-backup/" title="MongoDB Backup" class="dd-item active">
+        <a href="/docs/back-end/mongodb-backup/">
+        MongoDB Backup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/docs/'></a> > <a href='/docs/back-end/'>Back End</a> > MongoDB Backup
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#local-backup">Local Backup</a>
+<ul>
+<li><a href="#creating-a-backup-script">Creating a Backup Script</a></li>
+<li><a href="#scheduling-periodic-script-execution">Scheduling Periodic Script Execution</a>
+<ul>
+<li><a href="#daily-execution">Daily Execution</a></li>
+<li><a href="#weekly-execution">Weekly Execution</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>MongoDB Backup</h1>
+          
+
+        
+
+
+
+
+<p>The more backups there are, the better. Thankfully, because of GitHub, we have multiple backups of the code in addition to the code on the server and on our own computers. However, MongoDB needs more work to set up for backups. This tutorial will guide you on how to make a backup procedure for MongoDB.</p>
+
+<h2 id="local-backup">Local Backup</h2>
+
+<p>A local backup is helpful because data can become corrupted or maliciously manipulated while in production. A local backup is a great tool for fixing this because the database can be restored from the local backup. However, this does not protect against total hard drive failure.</p>
+
+<h3 id="creating-a-backup-script">Creating a Backup Script</h3>
+
+<p>In your home folder, create a script titled <code>backup</code> by entering the following command:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nano backup</code></pre></div>
+
+<p>After creating the file, append the following commands to it (replace <code>&lt;database&gt;</code> with the database you are using):</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">NOW<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>date +%Y-%m-%d_%H:%M:%S<span style="color:#66d9ef">)</span>
+mongodump -d &lt;database&gt; -o ~/backups/$NOW.mdb</code></pre></div>
+
+<p>Then save the file (if using <code>nano</code> press control+x). Then, in your shell, give yourself permission to run it:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo chmod <span style="color:#ae81ff">500</span> ~/backup</code></pre></div>
+
+<p>To execute the script, run the following command:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/backup</code></pre></div>
+
+<h3 id="scheduling-periodic-script-execution">Scheduling Periodic Script Execution</h3>
+
+<p>Although the <code>backup</code> script can be run manually, it would be more efficient for the script to run automatically. To schedule a periodic execution of the script, first run the following command:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">crontab -e</code></pre></div>
+
+<p>Then scroll your cursor to the bottom of the file. Add a new line after the comments (comments start with #). Once you add the line, save the file by pressing control+x. Different periods are defined below, but you can also read <a href="https://www.computerhope.com/unix/ucrontab.htm">this in-depth guide</a> on crontab.</p>
+
+<h4 id="daily-execution">Daily Execution</h4>
+
+<p>To add a daily execution at midnight, add the following line to the file (replace <code>&lt;userfolder&gt;</code> with your username):</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> * * * /home/&lt;userfolder&gt;/backup</code></pre></div>
+
+<p><br></p>
+
+<h4 id="weekly-execution">Weekly Execution</h4>
+
+<p>To add a weekly execution on Sunday at midnight, add the following line to the file (replace <code>&lt;userfolder&gt;</code> with your username):</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> * * <span style="color:#ae81ff">0</span> /home/&lt;userfolder&gt;/backup</code></pre></div>
+
+<p><br><br></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/docs/back-end/setting-up-a-server/" title="Setting Up A Server"> <i class="fas fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/docs/back-end/mongodb-access-with-compass/" title="Access MongoDB with MongoDB Compass" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/docs/js/clipboard.min.js?1540102564"></script>
+    <script src="/docs/js/perfect-scrollbar.min.js?1540102564"></script>
+    <script src="/docs/js/perfect-scrollbar.jquery.min.js?1540102564"></script>
+    <script src="/docs/js/jquery.sticky.js?1540102564"></script>
+    <script src="/docs/js/featherlight.min.js?1540102564"></script>
+    <script src="/docs/js/html5shiv-printshiv.min.js?1540102564"></script>
+    <script src="/docs/js/highlight.pack.js?1540102564"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/docs/js/modernizr.custom.71422.js?1540102564"></script>
+    <script src="/docs/js/learn.js?1540102564"></script>
+    <script src="/docs/js/hugo-learn.js?1540102564"></script>
+
+    <link href="/docs/mermaid/mermaid.css?1540102564" type="text/css" rel="stylesheet" />
+    <script src="/docs/mermaid/mermaid.js?1540102564"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
