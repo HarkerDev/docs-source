@@ -1,7 +1,7 @@
 +++
 title = "Contribution"
 date = 2018-10-20T22:20:58-05:00
-weight = 5
+weight = 1
 chapter = true
 pre = "<b>I. </b>"
 +++
