@@ -3,6 +3,8 @@ title: "Referencing a Partial Page"
 date: 2018-09-24
 ---
 
+# Referencing a Partial Page
+
 To reference the partial page `views/partials/some-partial.ejs` from a page in `views/pages` in ejs, use the `include` function as so:
 
 {{< highlight html >}}

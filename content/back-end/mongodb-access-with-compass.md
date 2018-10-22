@@ -58,9 +58,11 @@ On the left side, there will be a list of databases that are hosted on the serve
 Under the database you are connected to, a list of collections should appear. To begin, click on the name of the collection you wish to manipulate. 
 
 ### Filtering a Collection
+
 To filter a collection, use the filter at the top of the GUI. MongoDB has [[their own tutorial|https://docs.mongodb.com/v3.2/tutorial/query-documents/]] on queries, but here are a few examples:
 
 #### Syntax
+
 To filter the collection to documents that only have a property with a certain value, enter `{ "<property>": "<value>" }` into the filter, replacing `<property>` with the property and `<value>` with the value. For example, to query documents which have the `username` property set to `19johnd`, use the query:
 
 {{< highlight json >}}
@@ -111,6 +113,4 @@ To delete a field, click the 'x' icon on the left side of the row. To add a fiel
 
 ## More information
 
-For more information, visit [[MongoDB's official Compass tutorial|https://docs.mongodb.com/compass/master/]].
-
-<br><br>
+For more information, visit [MongoDB's official Compass tutorial](https://docs.mongodb.com/compass/master/).

@@ -3,6 +3,8 @@ title: "Populate Database w/ Test Files"
 date: 2018-09-24
 ---
 
+# Populating Database with Test Files
+
 Testing often requires a populated database to work with. This tutorial explains how to write a write scripts which populate the database with test documents specified in files you will create.
 
 ## Setup
@@ -44,7 +46,7 @@ In your repository folder, create a new folder titled `DatabaseTestFiles`. In th
 
 Note the lack of commas between objects.
 
-#### A note on implementation
+### A Note on Implementation
 
 We are only using a model with two String fields. More models and fields could be added in the same fashion. If a reference field is added, there are two possibilities that could be implemented. The first would be to generate the ids in the database test files, and then reference those ids them in the other document. The other would be to generate documents for both collections separately, then randomly pair them together (depending on the direction of the reference). 
 
@@ -65,7 +67,7 @@ const User = require('../models/user');
 {{< / highlight >}}
 
 If you were to add another model to the populate script, you would add its `require` reference here.
-Then, add the `parseUsers` function. 
+Then, add the `parseUsers` function.
 
 {{< highlight js >}}
 function parseUsers() {
@@ -177,5 +179,3 @@ require('./unpopulate').then(parseUsers);
 {{< / highlight >}}
 
 This makes sure that the database is depopulated before repopulating it. 
-
-<br><br>

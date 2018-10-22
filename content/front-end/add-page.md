@@ -3,6 +3,8 @@ title: "Adding a New Page to a Project"
 date: 2018-09-24
 ---
 
+# Adding a Page to a Node.js Applications
+
 This tutorial will guide you on how to add a new page to a node.js website.
 
 ## Creating the page
@@ -51,11 +53,11 @@ Finally, there is the orientation partial. This partial will force any mobile us
 
 Add whatever page content that the page is intended to have. Note that the head include give you access to materializecss and jquery. 
 
-For information on how to use materializecss, [[view their website|http://materializecss.com/]]. 
+For information on how to use materializecss, [view their website](http://materializecss.com/).
 
-For information on how to use jquery, [[view their documentation|http://api.jquery.com/]].
+For information on how to use jquery, [view their documentation](http://api.jquery.com/).
 
-In terms of code structure, [[view our tutorial on front-end coding structure and style|https://github.com/DJMcoder/HarkerDevGuides/wiki/Front-End-Coding-Practices]].
+In terms of code structure, [view our tutorial on front-end coding structure and style](https://github.com/DJMcoder/HarkerDevGuides/wiki/Front-End-Coding-Practices).
 
 ### Closing the page
 
@@ -94,5 +96,3 @@ To add the page to the backend, add the following code to the main router:
 {{< highlight js >}}
 router.get('/page', (req, res) => { res.render('pages/page.ejs') })
 {{< / highlight >}}
-
-<br><br>

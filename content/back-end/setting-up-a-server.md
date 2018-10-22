@@ -3,6 +3,8 @@ title: "Setting Up A Server"
 date: 2018-09-24
 ---
 
+# Setting Up A Server
+
 You'll be writing code for two different environments: development and production. The production environment is the server. The stuff on it should be free of errors, and ideally you don't want to be testing anything in production. The development environment is what you run on your machine. You should ideally test your changes in your development environment before deploying them to production.
 
 ## Development
@@ -35,7 +37,7 @@ Most of our projects use MongoDB as a database. You can get that from [here](htt
 
 ## Production
 
-### Installation
+### Installing
 
 In the production environment since performance matters we use more software to help handle the load of many students accessing an application at once. This will be discussed below.
 
@@ -72,6 +74,5 @@ You'll also need to clone the repo into the home folder. You'll need to set up S
 Use `sudo service mongod start` to start MongoDb, and `pm2 start app.js -i 0 --name "app"` (assuming `app.js` is the main file and you're in the directory you cloned) to start the main application for the first time. Later you can just use `pm2 start app`.
 
 ### Backups
-Consider viewing [[this tutorial|https://github.com/DJMcoder/HarkerDevGuides/wiki/Creating-Backup-Procedures]] for an in-depth guide on creating a backup procedure.
 
-<br><br>
+Consider viewing [[this tutorial|https://github.com/DJMcoder/HarkerDevGuides/wiki/Creating-Backup-Procedures]] for an in-depth guide on creating a backup procedure.

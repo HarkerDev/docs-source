@@ -3,6 +3,8 @@ title: "Front End Dev Practices"
 date: 2018-09-23
 ---
 
+# Front End Development Overview
+
 ## Placement and External Referencing
 
 Front-end development takes place *solely* in the views and static folders.
@@ -138,5 +140,3 @@ Whether to use an AJAX request or use EJS to display information is a decision t
 An example of a good time to use EJS is when generating a PDF, or a page designed to be printed. That way, the page is ready to be printed immediately after rendering, rather than having to wait for an AJAX request to finish.
 
 An example of a good time to use AJAX is when data is often refreshed, such as a user's data, or if that data needs to be modified.
-
-<br><br>
