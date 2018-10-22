@@ -3,8 +3,6 @@ title: "Setting Up A Server"
 date: 2018-09-24
 ---
 
-# Setting Up A Server
-
 You'll be writing code for two different environments: development and production. The production environment is the server. The stuff on it should be free of errors, and ideally you don't want to be testing anything in production. The development environment is what you run on your machine. You should ideally test your changes in your development environment before deploying them to production.
 
 ## Development

@@ -1,9 +1,7 @@
 ---
-title: "Front End Dev Practices"
+title: "Front End Development Practices"
 date: 2018-09-23
 ---
-
-# Front End Development Overview
 
 ## Placement and External Referencing
 
@@ -43,7 +41,7 @@ At HarkerDev, we only use `include` to include files from `views/partials`. If y
 
 In large chunks of HTML, have a starting tag describing the chunk, and then another comment closing the chunk with the selector, like so:
 
-{{< highlight html >}}
+````html
 <!-- This does something -->
 <div class=".selector">
   <!-- This does another thing -->
@@ -52,22 +50,22 @@ In large chunks of HTML, have a starting tag describing the chunk, and then anot
     ...
   </div><!-- /.something-else -->
 </div><!-- /.selector -->
-{{< / highlight >}}
+````
 
 ### JavaScript
 
 When defining variables, please try to make the variable name self-explaining. In addition, leave a comment next to it briefly describing its purpose like so:
 
-{{< highlight js >}}
+````js
 var interval = 50        // the interval for the setInterval() function used by the countdown timer
 var isDisplaying = false // whether the page is currently displaying
-{{< / highlight >}}
+````
 
 As shown above, if variables are set in blocks, align the comments for a nicer aesthetic. If your comment uses the word 'whether' for a boolean, make sure that the comment aligns with your boolean; if the condition set after the word 'whether' is true, your variable should be equal to `true`. Never say 'whether or not'.
 
 Before functions, add a comment describing the purpose and/or the action of the function right before it. If it is long, add some comments describing different parts of the function:
 
-{{< highlight js >}}
+````js
 /*
   does something
 
@@ -82,11 +80,11 @@ function something(param, another) {
   // finally does this
   return x
 }
-{{< / highlight >}}
+````
 
 If you got the code off of another website, make sure to link them in the comment:
 
-{{< highlight js >}}
+````js
 /*
  https://stackoverflow.com/questions/123456/does-this-really-cool-thing
  does a really cool thing
@@ -96,28 +94,28 @@ function something() {
   // then another thing
   // finally does this
 }
-{{< / highlight >}}
+````
 
 Also, try to comment before calling functions with callback, like so:
 
-{{< highlight js >}}
+````js
 // after doing x, does y
 funcWithCB(function() {
   // first does a thing
   // then another thing
   // finally does this
 })
-{{< / highlight >}}
+````
 
 Unless it is obvious, like the `jquery's $(document).ready(callback)` function, which can abbreviated to `$(callback)`:
 
-{{< highlight js >}}
+````js
 $(function() {
   // first does a thing
   // then another thing
   // finally does this
 })
-{{< / highlight >}}
+````
 
 Long explanations are not needed, and functions should be generally self-descriptive. Function names should not be more than 15 characters, and abbreviations can be used as long as comments are added with the full name.
 
