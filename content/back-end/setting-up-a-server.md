@@ -35,7 +35,7 @@ Most of our projects use MongoDB as a database. You can get that from [here](htt
 
 ## Production
 
-### Installation
+### Installing
 
 In the production environment since performance matters we use more software to help handle the load of many students accessing an application at once. This will be discussed below.
 
@@ -72,6 +72,5 @@ You'll also need to clone the repo into the home folder. You'll need to set up S
 Use `sudo service mongod start` to start MongoDb, and `pm2 start app.js -i 0 --name "app"` (assuming `app.js` is the main file and you're in the directory you cloned) to start the main application for the first time. Later you can just use `pm2 start app`.
 
 ### Backups
-Consider viewing [[this tutorial|https://github.com/DJMcoder/HarkerDevGuides/wiki/Creating-Backup-Procedures]] for an in-depth guide on creating a backup procedure.
 
-<br><br>
+Consider viewing [[this tutorial|https://github.com/DJMcoder/HarkerDevGuides/wiki/Creating-Backup-Procedures]] for an in-depth guide on creating a backup procedure.
