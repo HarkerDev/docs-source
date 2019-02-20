@@ -1,6 +1,6 @@
 # docs-source
 
-Source code for Harker Development documentation website, built on [Hugo](https://gohugo.io/). View [deployment repository](https://github.com/HarkerDev/docs), or the [website](https://harkerdev.github.io/docks).
+Source code for Harker Development documentation website, built on [Hugo](https://gohugo.io/). View [deployment repository](https://github.com/HarkerDev/docs), or the [website](https://harkerdev.github.io/docs).
 
 ## Development
 
